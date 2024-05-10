@@ -1,0 +1,47 @@
+{
+  "name": "exectracker-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "exectracker api",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cogart Studio",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.359.0",
+    "@sendgrid/mail": "^8.1.3",
+    "aws-sdk": "^2.1400.0",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.2.2",
+    "multer": "^1.4.5-lts.1",
+    "nanoid": "^4.0.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.9.0",
+    "x-xss-protection": "^2.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
+  }
+}

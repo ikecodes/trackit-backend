@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title><%= title %></title>
+        <style>
+            /* Add any CSS styles you want to apply to the email here */
+            body {
+                background-color: #f5f5f5;
+                font-family: Arial, sans-serif;
+            }
+            table {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #fff;
+                border-collapse: collapse;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            h1 {
+                color: #007bff;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+            }
+            a.button-cta {
+                display: inline-block;
+                margin-bottom: 30px;
+                background-color: #007bff;
+                color: #fff;
+                padding: 12px 30px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+            a.button:hover {
+                background-color: #0062cc;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <img src="https://i.ibb.co/DGRb8K3/Logo.png" alt="logo" />
+                    <h1>Workspace Invitation</h1>
+                    <div>
+                        <h2>Hello,</h2>
+
+                        <p>
+                            this is to inform you of being added to a workspace
+                            ( <%= title %> ).
+                        </p>
+                        <p>
+                            you are receiving this email as a/an <%= role %> for
+                            this workspace. If you have any questions or
+                            concerns, please don't hesitate to contact us.
+                        </p>
+                        <a
+                            class="button-cta"
+                            href="exectracker://"
+                            >view</a
+                        >
+                        workspace
+                        <p>
+                            Best regards,<br />
+                            The Exectracker Team
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
