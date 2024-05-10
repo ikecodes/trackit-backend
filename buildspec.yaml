@@ -1,0 +1,27 @@
+# BuildSpec for AWS CodeBuild
+# Install - Test - Build
+# Phases are: install -> prebuild -> build -> post_build
+# Artifacts are files you need deployed
+
+version: 0.2
+phases:
+    install:
+        runtime-versions:
+            nodejs: 18
+        commands:
+            - export DEBIAN_FRONTEND=noninteractive
+            - npm install
+
+    build:
+        commands:
+            - echo Build started on `date`
+            - npm run build
+            # you can run tests here too
+
+    post_build:
+        commands:
+            - echo Build completed on `date`
+
+artifacts:
+    files:
+        - '**/*'
