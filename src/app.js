@@ -30,6 +30,13 @@ app.use(cors())
 // })
 app.use('/api/v1/', routes)
 
+app.get('/home', (req, res) => {
+    res.status(200).json({
+        status: true,
+        message: 'Welcome to Exectracker api',
+    })
+})
+
 app.get('/', (req, res) => {
     res.status(200).json({
         status: true,
